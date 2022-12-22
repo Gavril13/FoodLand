@@ -1,4 +1,7 @@
 .HautPage{
     width: 150px;
     height: 100px;
+    top: 10px;
+    margin: 0;
+    padding: 0;
 }
