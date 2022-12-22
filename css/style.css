@@ -18,7 +18,7 @@ header{
     height: 11vh;
     top: 0;
     left: 0;
-    background:wheat;
+    background:slategray;
     color: black;
     padding: 0 2rem;
 }
@@ -40,24 +40,24 @@ nav{
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    width: 550px;
+    width: 800px;
 }
 
 .menu li a{
-    color: black;
+    color:azure;
     text-decoration: none;
 }
 
 .btn1 {
     border: 0;
-    background: lightyellow;
+    background:silver;
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 20px;
 }
 .btn2 {
     border: 0;
-    background:lightyellow;
+    background:silver;
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 20px;
