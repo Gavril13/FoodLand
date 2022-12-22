@@ -1,7 +1,138 @@
-.HautPage{
-    width: 150px;
-    height: 100px;
-    top: 10px;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /*Modèle de boite*/
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family:sans-serif;
+}
+
+header{
+    position: absolute;
+    width: 100%;
+    height: 11vh;
+    top: 0;
+    left: 0;
+    background:wheat;
+    color: black;
+    padding: 0 2rem;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle {
+    display: none;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 550px;
+}
+
+.menu li a{
+    color: black;
+    text-decoration: none;
+}
+
+.btn1 {
+    border: 0;
+    background: lightyellow;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+.btn2 {
+    border: 0;
+    background:lightyellow;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.fond{
+    height: 100ch;
+    background: url(../Images/fond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+@media all and (max-width: 991px){
+
+    header{
+        background: transparent;
+    }
+
+    .toggle{
+        display: block;
+        font-size: 1.8rem;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+    }
+
+    .logo{
+        position: relative;
+        z-index: 20;
+    }
+
+    .toggle .ouvrir {
+        display: block;
+    }
+
+    .toggle .fermer {
+        display: none;
+    }
+
+    .open .ouvrir {
+        display: none;
+    }
+
+    .open .fermer {
+        display: block;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background:slategray;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+        transform: translateX(-100%);
+        transition: transform 1s;
+    }
+
+    .menu li a{
+        font-size: 1rem;
+    }
+    
+    .btn1{
+        font-size: 1rem;
+    }
+    .btn2{
+        font-size: 1rem;
+    }
+
+    .open .menu{
+        transform: translateX(0);
+    }
 }
