@@ -51,6 +51,7 @@ nav{
 .btn1 {
     border: 0;
     background:silver;
+    color: black;
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 20px;
@@ -58,6 +59,7 @@ nav{
 .btn2 {
     border: 0;
     background:silver;
+    color: black;
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 20px;
